@@ -1,6 +1,6 @@
 function getContentTemplate(pokemon) {
     return `
-        <div class="flip-card">
+        <div class="flip-card" onclick="toggleOverlay()">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
                     <img class="flip-card-front-img" src="./assets/img/pokedex_card_optimized.png" alt="">
