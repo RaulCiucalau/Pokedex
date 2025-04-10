@@ -16,12 +16,6 @@
     background-color: #555;
 }
 
-
-@font-face {
-    font-family: "myFont";
-    src: url("./font/GROBOLD.ttf");
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -41,7 +35,6 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     image-rendering: pixelated;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 nav {
