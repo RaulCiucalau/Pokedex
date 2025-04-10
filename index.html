@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="shortcut icon" href="./assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/assets.css">
+    <link rel="stylesheet" href="./styles/standard.css">
+    <link rel="stylesheet" href="./styles/card-colors.css">
+    <link rel="stylesheet" href="./styles/flip-card.css">
+    <link id="flipCardHover" rel="stylesheet" disabled href="./styles/flip-card-hover.css">
+    <link id="flipCardTransformProperty" rel="stylesheet" disabled href="./styles/flip-card-transform-property.css">
+    <link rel="stylesheet" href="./styles/toggle-switch.css">
+    <script src="script.js"></script>
+    <script src="./scripts/templates.js"></script>
+    <script src="./scripts/loadPokemons.js"></script>
+</head>
+
+<body onload="onLoadFunc()">
+    <nav>
+
+    </nav>
+    <div class="toggle_btn_container">
+        <label class="switch">
+            <input id="toggleSwitch" onclick="checkIfToggleSwitch()" type="checkbox">
+            <span class="slider round"></span>
+        </label>
+        <div class="toggle_btn_title">Flip Cards</div>
+    </div>
+    <div id="content" class="main">
+    </div>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
