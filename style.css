@@ -23,8 +23,6 @@
 .poke-img-container {
     display: flex;
     justify-content: center;
-    background-color: rgb(206, 144, 94);
-
 }
 
 .poke-img {
