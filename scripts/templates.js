@@ -34,16 +34,16 @@ function getOverlayTemplate(pokemon, formattedId) {
                 </div>
                 <p>${pokemon.types}</p>
                 <div class="tab-pokemon-overlay">
-                    <button class="tablinks" onclick="openTabOverlay(event, 'London')">Main</button>
-                    <button class="tablinks" onclick="openTabOverlay(event, 'Paris')">Stats</button>
+                    <button class="tablinks active" onclick="openTabOverlay(event,'Main')">Main</button>
+                    <button class="tablinks" onclick="openTabOverlay(event, 'Stats')">Stats</button>
                 </div>
 
-                <div id="London" class="tabcontent">
+                <div id="Main" class="tabcontent" style="display: block;">
                     <h3>Main</h3>
                     <p>adssaddas</p>
                 </div>
 
-                <div id="Paris" class="tabcontent">
+                <div id="Stats" class="tabcontent" style="display: none;">
                     <h3>Stats</h3>
                     <p>adsadsads</p> 
                 </div>
