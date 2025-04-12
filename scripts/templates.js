@@ -23,26 +23,31 @@ function getContentTemplate(pokemon, index) {
     `
 }
 
-function getOverlayTemplate(pokemon) {
+function getOverlayTemplate(pokemon, formattedId) {
     return `
         <div class="overlay-content">
+            <h2 class ="card-overlay-title">#${formattedId}</h2>
             <h2 class ="card-overlay-title">${pokemon.name}</h2>
             <div class="card-overlay-details">
                 <div class="card-overlay-img-container ${pokemon.types[0]}" id="card-color-type">
                     <img src="${pokemon.imageUrl}" alt="${pokemon.name}">
                 </div>
+                <p>${pokemon.types}</p>
+                <div class="tab-pokemon-overlay">
+                    <button class="tablinks" onclick="openTabOverlay(event, 'London')">Main</button>
+                    <button class="tablinks" onclick="openTabOverlay(event, 'Paris')">Stats</button>
+                </div>
 
-            </div>
+                <div id="London" class="tabcontent">
+                    <h3>Main</h3>
+                    <p>adssaddas</p>
+                </div>
 
-            <div class="pokemon-stats">
-                <p><strong>Types:</strong> ${pokemon.types}</p>
-                <p><strong>HP:</strong> ${pokemon.hp}</p>
-                <p><strong>Attack:</strong> ${pokemon.attack}</p>
-                <p><strong>Defense:</strong> ${pokemon.defense}</p>
-                <p><strong>Speed:</strong> ${pokemon.speed}</p>
-                <p><strong>Height:</strong> ${pokemon.height} cm</p>
-                <p><strong>Weight:</strong> ${pokemon.weight.toFixed(2).replace('.', ',')} kg</p>
-            </div>
+                <div id="Paris" class="tabcontent">
+                    <h3>Stats</h3>
+                    <p>adsadsads</p> 
+                </div>
+                </div>
         </div>
     `;
 }
