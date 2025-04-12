@@ -1,3 +1,7 @@
 .flip-card-back {
     transform: rotateY(180deg);
   }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }

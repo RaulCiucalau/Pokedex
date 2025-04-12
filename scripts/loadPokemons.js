@@ -10,6 +10,7 @@ async function onLoadFunc() {
     contentRef.innerHTML = '';
     Object.keys(pokemons).forEach(key => {
         contentRef.innerHTML += getContentTemplate(pokemons[key]);
+        checkIfToggleSwitch();
     });
 }
 

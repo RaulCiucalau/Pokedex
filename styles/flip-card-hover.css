@@ -1,3 +1,7 @@
-.flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
+.flip-card:hover {
+  box-shadow: 1px -20px 20px 0px #fce322ab;
+}
+
+.flip-card-container.no-hover .flip-card:hover {
+  box-shadow: none !important;
+}
