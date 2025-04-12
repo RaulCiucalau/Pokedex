@@ -39,14 +39,26 @@ function getOverlayTemplate(pokemon, formattedId) {
                 </div>
 
                 <div id="Main" class="tabcontent" style="display: block;">
-                    <h3>Main</h3>
-                    <p>adssaddas</p>
+                    <p><strong>Height:</strong> ${pokemon.height} cm</p>
+                    <p><strong>Weight:</strong> ${pokemon.weight.toFixed(2).replace('.', ',')} kg</p>
                 </div>
-
                 <div id="Stats" class="tabcontent" style="display: none;">
-                    <h3>Stats</h3>
-                    <p>adsadsads</p> 
-                </div>
+                    <p><strong>HP:</strong></p>
+                    <div class="stat-bar">
+                        <div class="stat-fill" style="width: ${pokemon.hp / 255 * 100}%; max-width: 100%;">${pokemon.hp}</div>
+                    </div>
+                    <p><strong>Attack:</strong></p>
+                    <div class="stat-bar">
+                        <div class="stat-fill" style="width: ${pokemon.attack / 190 * 100}%; max-width: 100%;">${pokemon.attack}</div>
+                    </div>
+                    <p><strong>Defense:</strong></p>
+                    <div class="stat-bar">
+                        <div class="stat-fill" style="width: ${pokemon.defense / 250 * 100}%; max-width: 100%;">${pokemon.defense}</div>
+                    </div>
+                    <p><strong>Speed:</strong></p>
+                    <div class="stat-bar">
+                        <div class="stat-fill" style="width: ${pokemon.speed / 200 * 100}%; max-width: 100%;">${pokemon.speed}</div>
+                    </div>
                 </div>
         </div>
     `;
