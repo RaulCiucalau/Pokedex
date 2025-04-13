@@ -8,7 +8,7 @@ function toggleOverlay() {
 function openOverlay(index) {
     let selectedPokemon = pokemons[index];
     let overlayRef = document.getElementById("overlay");
-    let formattedId = String(index + 1).padStart(3, '0');
+    let formattedId = String(index + 1);
     overlayRef.classList.toggle("d_none");
     overlayRef.innerHTML = "";
     overlayRef.innerHTML = getOverlayTemplate(selectedPokemon, formattedId);
@@ -27,3 +27,22 @@ function openTabOverlay(evt, tabName) {
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
 }
+
+function updatePokeCard(direction) {
+    currentIndex += direction;
+
+    if (currentIndex < 0) {
+        currentIndex = pokemons.length - 1;
+    } else if (currentIndex >= pokemons.length) {
+        currentIndex = 0;
+    }
+}
+
+function nextBtnPokeCard() {
+    updatePokeCard(1);
+}
+
+function backBtnPokeCard() {
+    updatePokeCard(-1); 
+}
+

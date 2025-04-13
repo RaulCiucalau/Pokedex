@@ -1,0 +1,63 @@
+.fire {
+    background: radial-gradient(circle at 106% -32%, #ca4a4a 57%, rgb(255 255 255) 53%);
+}
+
+.water {
+    background: radial-gradient(circle at 106% -32%, #70c5d4 57%, rgb(255 255 255) 53%);
+}
+
+.grass {
+    background: radial-gradient(circle at 106% -32%, #5bcc74 57%, rgb(255 255 255) 53%);
+}
+
+.electric {
+    background: radial-gradient(circle at 106% -32%, #F8D030 57%, rgb(255 255 255) 53%);
+}
+
+.ice {
+    background: radial-gradient(circle at 106% -32%, #98D8D8 57%, rgb(255 255 255) 53%);
+}
+
+.fighting {
+    background: radial-gradient(circle at 106% -32%, #C03028 57%, rgb(255 255 255) 53%);
+}
+
+.poison {
+    background: radial-gradient(circle at 106% -32%, #A040A0 57%, rgb(255 255 255) 53%);
+}
+
+.ground {
+    background: radial-gradient(circle at 106% -32%, #E0C068 57%, rgb(255 255 255) 53%);
+}
+
+.psychic {
+    background: radial-gradient(circle at 106% -32%, #F85888 57%, rgb(255 255 255) 53%);
+}
+
+.bug {
+    background: radial-gradient(circle at 106% -32%, #A8B820 57%, rgb(255 255 255) 53%);
+}
+
+.rock {
+    background: radial-gradient(circle at 106% -32%, #B8A038 57%, rgb(255 255 255) 53%);
+}
+
+.ghost {
+    background: radial-gradient(circle at 106% -32%, #705898 57%, rgb(255 255 255) 53%);
+}
+
+.dragon {
+    background: radial-gradient(circle at 106% -32%, #7038F8 57%, rgb(255 255 255) 53%);
+}
+
+.dark {
+    background: radial-gradient(circle at 106% -32%, #705848 57%, rgb(255 255 255) 53%);
+}
+
+.fairy {
+    background: radial-gradient(circle at 106% -32%, #EE99AC 57%, rgb(255 255 255) 53%);
+}
+
+.normal {
+    background: radial-gradient(circle at 106% -32%, #A8A899 57%, rgb(255 255 255) 53%);
+}

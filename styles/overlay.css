@@ -14,13 +14,12 @@
 
 .overlay-content {
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 400px;
-    height: 632px;
-    background-color: #868686;
-    outline: solid 8px black;
+    height: 648px;
+    border-radius: 16px;
+    box-sizing: border-box;
 }
 
 .overlay-background {
@@ -35,27 +34,73 @@
     overflow: hidden;
     height: 20px;
     margin-bottom: 10px;
-  }
+}
 
-  .stat-fill {
+.stat-fill {
     height: 100%;
-    background-color: #4caf50;
     text-align: right;
     padding-right: 5px;
     color: white;
     font-weight: bold;
     border-radius: 8px 0 0 8px;
-  }
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 
+.overlay-types {
+    text-transform: uppercase;
+    font-family: "myFont";
+    letter-spacing: 4px;
+}
 
+h2 {
+    font-family: "myFont";
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
 
+.overlay-title-container {
+    text-align: center;
+    margin-block: 14px;
+}
 
+.card-overlay-img-container {
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 28px;
+}
 
+.card-overlay-img-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
 
+.tab-pokemon-overlay {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
 
+.hp {
+    background-color: #ff5959;
+}
 
+.attack {
+    background-color: #ff9f5b;
+}
 
+.defense {
+    background-color: #ffd600;
+}
 
+.speed {
+    background-color: #5b8cff;
+}
 
 .tab {
     overflow: hidden;
@@ -83,14 +128,17 @@
 }
 
 .tabcontent {
+    font-family: "Poppins", sans-serif;
     display: none;
-    padding: 6px 12px;
     text-align: left;
     height: 132px;
+    color: black;
+
 }
 
 .tablinks {
-    background-color: #222;
+    background-color: #bdbdbd;
+    ;
     font-size: 16px;
     color: white;
     width: 180px;
@@ -99,5 +147,29 @@
 }
 
 .tablinks:hover {
-    background-color: #4e4e4e;
+    background-color: #b1b1b1;
+}
+
+.tablinks.active {
+    background-color: #3d65e9;
+}
+
+.flip-img {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.overlay-arrows-button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.overlay-arrows-button img {
+    cursor: pointer;
+}
+
+.overlay-arrows-button img:hover {
+    background-color: rgb(207, 207, 207);
+    border-radius: 50%;
 }

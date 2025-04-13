@@ -8,7 +8,8 @@ async function onLoadFunc() {
     }
     contentRef.innerHTML = '';
     pokemons.forEach((pokemon, index) => {
-        contentRef.innerHTML += getContentTemplate(pokemon, index);
+        let formattedId = String(index + 1);
+        contentRef.innerHTML += getContentTemplate(pokemon, index, formattedId);
         checkIfToggleSwitch();
     });
 }
@@ -33,6 +34,7 @@ function pushDataInPokemonsArray(pokemon, imageUrl, types, hp, attack, defense, 
         name: pokemon.name,
         imageUrl,
         types,
+        types2: types.map(type => type + "2"),
         hp,
         attack,
         defense,

@@ -1,64 +1,63 @@
-.fire {
-    background-color: #ca4a4a;
+.fire2 {
+    background: radial-gradient(circle at 0% 0%, #ca4a4a 0%, #f3a9a9 100%);
 }
 
-.water {
-    background-color: #70c5d4;
+.water2 {
+    background: radial-gradient(circle at 0% 0%, #70c5d4 0%, #b6e6ef 100%);
 }
 
-.grass {
-    background-color: #5bcc74;
+.grass2 {
+    background: radial-gradient(circle at 0% 0%, #5bcc74 0%, #a6e7b4 100%);
 }
 
-.electric {
-    background-color: #F8D030;
+.electric2 {
+    background: radial-gradient(circle at 0% 0%, #F8D030 0%, #fceb91 100%);
 }
 
-.ice {
-    background-color: #98D8D8;
+.ice2 {
+    background: radial-gradient(circle at 0% 0%, #98D8D8 0%, #d6f2f2 100%);
 }
 
-.fighting {
-    background-color: #C03028;
+.fighting2 {
+    background: radial-gradient(circle at 0% 0%, #C03028 0%, #ea9a97 100%);
 }
 
-.poison {
-    background-color: #A040A0;
+.poison2 {
+    background: radial-gradient(circle at 0% 0%, #A040A0 0%, #db9adb 100%);
 }
 
-.ground {
-    background-color: #E0C068;
+.ground2 {
+    background: radial-gradient(circle at 0% 0%, #E0C068 0%, #f4e5a4 100%);
 }
 
-.psychic {
-    background-color: #F85888;
+.psychic2 {
+    background: radial-gradient(circle at 0% 0%, #F85888 0%, #fcb4c7 100%);
 }
 
-.bug {
-    background-color: #A8B820;
+.bug2 {
+    background: radial-gradient(circle at 0% 0%, #A8B820 0%, #dce284 100%);
 }
 
-.rock {
-    background-color: #B8A038;
+.rock2 {
+    background: radial-gradient(circle at 0% 0%, #B8A038 0%, #e7d88e 100%);
 }
 
-.ghost {
-    background-color: #705898;
+.ghost2 {
+    background: radial-gradient(circle at 0% 0%, #705898 0%, #b6a7d1 100%);
 }
 
-.dragon {
-    background-color: #7038F8;
+.dragon2 {
+    background: radial-gradient(circle at 0% 0%, #7038F8 0%, #b29efc 100%);
 }
 
-.dark {
-    background-color: #705848;
+.dark2 {
+    background: radial-gradient(circle at 0% 0%, #705848 0%, #bcaea3 100%);
 }
 
-.fairy {
-    background-color: #EE99AC;
+.fairy2 {
+    background: radial-gradient(circle at 0% 0%, #EE99AC 0%, #f8c5d1 100%);
 }
 
-.normal {
-    background-color: #A8A899;
+.normal2 {
+    background: radial-gradient(circle at 0% 0%, #A8A899 0%, #dbdbd3 100%);
 }
-
