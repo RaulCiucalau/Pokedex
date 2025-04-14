@@ -14,6 +14,14 @@ function openOverlay(index) {
     overlayRef.innerHTML = getOverlayTemplate(selectedPokemon, formattedId);
 }
 
+function updateCardData(index) {
+    let selectedPokemon = pokemons[index];
+    let overlayRef = document.getElementById("overlay");
+    let formattedId = String(index + 1);
+    overlayRef.innerHTML = "";
+    overlayRef.innerHTML = getOverlayTemplate(selectedPokemon, formattedId);
+}
+
 function openTabOverlay(evt, tabName) {
     let i;
     const tabcontent = document.getElementsByClassName("tabcontent");
@@ -36,6 +44,8 @@ function updatePokeCard(direction) {
     } else if (currentIndex >= pokemons.length) {
         currentIndex = 0;
     }
+    updateCardData(currentIndex);
+    
 }
 
 function nextBtnPokeCard() {
