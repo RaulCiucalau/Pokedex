@@ -178,3 +178,11 @@ h2 {
 body.no-scroll {
     overflow: hidden;
 }
+
+.margin-bottom {
+    margin-bottom: 20px;
+}
+
+.margin-top {
+    margin-top: 28px;
+}

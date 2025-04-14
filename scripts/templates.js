@@ -46,10 +46,10 @@ function getOverlayTemplate(pokemon, formattedId) {
                     <button class="tablinks active" onclick="openTabOverlay(event, 'Stats')">Stats</button>
                 </div>
 
-                <div id="Main" class="tabcontent" style="display: none;">
-                    <p><strong>Type:</strong> ${pokemon.types}</p>
-                    <p><strong>Height:</strong> ${pokemon.height} cm</p>
-                    <p><strong>Weight:</strong> ${pokemon.weight.toFixed(2).replace('.', ',')} kg</p>
+                <div id="Main" class="tabcontent margin-top" style="display: none;">
+                    <p class="margin-bottom"><strong>Type:</strong> ${pokemon.types}</p>
+                    <p class="margin-bottom"><strong>Height:</strong> ${pokemon.height} cm</p>
+                    <p class="margin-bottom"><strong>Weight:</strong> ${pokemon.weight.toFixed(2).replace('.', ',')} kg</p>
                 </div>
                 <div id="Stats" class="tabcontent" style="display: block;">
                     <p><strong>HP:</strong></p>
