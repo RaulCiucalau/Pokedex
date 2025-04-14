@@ -3,15 +3,18 @@ let currentIndex = 0;
 function toggleOverlay() {
     let overlayRef = document.getElementById("overlay");
     overlayRef.classList.toggle("d_none");
+    document.body.classList.remove("no-scroll");
 }
 
 function openOverlay(index) {
+    document.body.classList.add("no-scroll");
     let selectedPokemon = pokemons[index];
     let overlayRef = document.getElementById("overlay");
     let formattedId = String(index + 1);
     overlayRef.classList.toggle("d_none");
     overlayRef.innerHTML = "";
     overlayRef.innerHTML = getOverlayTemplate(selectedPokemon, formattedId);
+    
 }
 
 function updateCardData(index) {
