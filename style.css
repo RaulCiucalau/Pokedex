@@ -57,3 +57,74 @@
     display: none;
 }
 
+.search-container {
+    float: right;
+  }
+
+  .search-container input[type=text] {
+    padding: 6px;
+    font-size: 17px;
+    border: none;
+  }
+
+  .search-container button {
+    float: right;
+    padding: 6px 10px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .btn-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+  }
+
+  .pokeball-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, red 50%, white 50%);
+    position: relative;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo-pokedex {
+    font-family: "myFont",serif;
+    font-size: 48px;
+    text-shadow: -8px 0px 0px rgb(98 98 98);
+}
+
+.pokeball-logo::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 4px;
+    background-color: black;
+}
+
+.pokeball-logo::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    border: 4px solid black;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
