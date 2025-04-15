@@ -34,8 +34,9 @@
             <p class="logo-pokedex">Pokedex</p>
         </div>
         <div class="search-container">
-            <form action="/action_page.php">
-                <input id="searchBar"onkeyup="searchPokemon()" type="text" placeholder="Search.." name="search">
+            <form onsubmit="searchPokemon(); return false">
+                <input id="searchBar" onkeyup="searchPokemon()" type="text" placeholder="Search.." name="search"
+                    pattern="[a-zA-Z]{3,}" title="Bitte mindestens 3 Buchstaben eingeben (nur A–Z)" required>
                 <button type="submit"><img class="btn-search" src="./assets/icons/icons8-suche.svg" alt=""></button>
             </form>
         </div>

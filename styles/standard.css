@@ -37,20 +37,26 @@ body {
     image-rendering: pixelated;
 }
 
-nav {
+header {
     height: 120px;
     background-color: #192536;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
 }
 
 .main {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    margin: 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(202px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+    justify-items: center;
 }
 
 footer {
     background-color: #192536;
     height: 90px;
 }
+

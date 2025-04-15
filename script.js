@@ -47,7 +47,7 @@ function updatePokeCard(direction) {
         currentIndex = 0;
     }
     updateCardData(currentIndex);
-    
+
 }
 
 function nextBtnPokeCard() {
@@ -55,7 +55,7 @@ function nextBtnPokeCard() {
 }
 
 function backBtnPokeCard() {
-    updatePokeCard(-1); 
+    updatePokeCard(-1);
 }
 
 function updateScrollLockBasedOnOverlay() {
@@ -68,3 +68,20 @@ function updateScrollLockBasedOnOverlay() {
     }
 }
 
+
+function searchPokemon() {
+    let input = document.getElementById('searchBar');
+    let inputText = input.value.trim().toLowerCase();
+    if (inputText.length === 0) {
+        renderPokeCards(pokemons);
+        return;
+    }
+    if (inputText.length < 3) {
+        renderPokeCards(pokemons);
+        return;
+    }
+    currentPokecards = pokemons.filter(pokemon =>
+        pokemon.name.toLowerCase().includes(inputText)
+    );
+    renderPokeCards(currentPokecards);
+}

@@ -1,18 +1,26 @@
 let pokemons = [];
+let currentPokecards = [];
+
 async function onLoadFunc() {
-    let response = await fetch("https://pokeapi.co/api/v2/pokemon/");
-    let pokemonData = await response.json();
-    let contentRef = document.getElementById('content');
+    const response = await fetch("https://pokeapi.co/api/v2/pokemon/");
+    const pokemonData = await response.json();
     for (let i = 0; i < pokemonData.results.length; i++) {
         await fetchPokemon(pokemonData.results[i], i);
     }
+    currentPokecards = pokemons;
+    renderPokeCards(pokemons);
+}
+
+function renderPokeCards(pokemonArray) {
+    const contentRef = document.getElementById('content');
     contentRef.innerHTML = '';
-    pokemons.forEach((pokemon, index) => {
+    pokemonArray.forEach((pokemon, index) => {
         let formattedId = String(index + 1);
         contentRef.innerHTML += getContentTemplate(pokemon, index, formattedId);
-        checkIfToggleSwitch();
     });
+    checkIfToggleSwitch();
 }
+
 async function fetchPokemon(pokemon, index) {
     let response = await fetch(pokemon.url);
     let data = await response.json();
@@ -26,7 +34,7 @@ async function fetchPokemon(pokemon, index) {
     const weight = data.weight;
     pushDataInPokemonsArray(pokemon, imageUrl, types, hp, attack, defense, speed, height, weight);
 
-openOverlay(index)
+    openOverlay(index)
 }
 
 function pushDataInPokemonsArray(pokemon, imageUrl, types, hp, attack, defense, speed, height, weight) {
