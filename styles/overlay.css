@@ -179,6 +179,11 @@ body.no-scroll {
     overflow: hidden;
 }
 
+html.no-scroll, body.no-scroll {
+    overflow: hidden !important;
+    height: 100%;
+}
+
 .margin-bottom {
     margin-bottom: 20px;
 }

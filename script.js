@@ -3,18 +3,17 @@ let currentIndex = 0;
 function toggleOverlay() {
     let overlayRef = document.getElementById("overlay");
     overlayRef.classList.toggle("d_none");
-    document.body.classList.remove("no-scroll");
+    updateScrollLockBasedOnOverlay();
 }
 
 function openOverlay(index) {
-    document.body.classList.add("no-scroll");
     let selectedPokemon = pokemons[index];
     let overlayRef = document.getElementById("overlay");
     let formattedId = String(index + 1);
     overlayRef.classList.toggle("d_none");
     overlayRef.innerHTML = "";
     overlayRef.innerHTML = getOverlayTemplate(selectedPokemon, formattedId);
-    
+    updateScrollLockBasedOnOverlay();
 }
 
 function updateCardData(index) {
@@ -57,5 +56,15 @@ function nextBtnPokeCard() {
 
 function backBtnPokeCard() {
     updatePokeCard(-1); 
+}
+
+function updateScrollLockBasedOnOverlay() {
+    let overlay = document.getElementById("overlay");
+    let isOverlayVisible = !overlay.classList.contains("d_none");
+    if (isOverlayVisible) {
+        document.body.classList.add("no-scroll");
+    } else {
+        document.body.classList.remove("no-scroll");
+    }
 }
 
