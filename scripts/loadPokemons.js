@@ -2,7 +2,7 @@ let pokemons = [];
 let currentPokecards = [];
 
 async function onLoadFunc() {
-    const response = await fetch("https://pokeapi.co/api/v2/pokemon/");
+    const response = await fetch("https://pokeapi.co/api/v2/pokemon?limit=25&offset=0");
     const pokemonData = await response.json();
     showLoadingSpinner();
     for (let i = 0; i < pokemonData.results.length; i++) {
@@ -36,8 +36,6 @@ async function fetchPokemon(pokemon, index) {
     const height = data.height;
     const weight = data.weight;
     pushDataInPokemonsArray(pokemon, imageUrl, types, hp, attack, defense, speed, height, weight);
-
-    openOverlay(index)
 }
 
 function pushDataInPokemonsArray(pokemon, imageUrl, types, hp, attack, defense, speed, height, weight) {

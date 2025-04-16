@@ -45,6 +45,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 2rem;
+    z-index: 2;
 }
 
 .main {

@@ -1,4 +1,6 @@
 let currentIndex = 0;
+let offset = 25;
+let limit = 35;
 
 function toggleOverlay() {
     let overlayRef = document.getElementById("overlay");
@@ -84,6 +86,7 @@ function searchPokemon() {
         pokemon.name.toLowerCase().includes(inputText)
     );
     renderPokeCards(currentPokecards);
+    document.getElementById('loadMorePokemons').classList.add("d_none");
 }
 
 function showLoadingSpinner() {
@@ -92,4 +95,21 @@ function showLoadingSpinner() {
 
 function hideLoadingSpinner() {
     document.getElementById('loading-spinner').style.display = 'none';
+}
+
+async function loadMorePokemons() {
+    showLoadingSpinner();
+    const response = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=${limit}&offset=${offset}`);
+    const pokemonData = await response.json();
+    for (let i = 0; i < pokemonData.results.length; i++) {
+        const newPokemon = await fetchPokemon(pokemonData.results[i], pokemons.length);
+    }
+    renderPokeCards(pokemons);
+    offset += limit;
+    hideLoadingSpinner();
+    if (offset >= 1302) {
+        document.getElementById('loadMoreBtn').classList.add("d_none");
+    }
+    
+    
 }
