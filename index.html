@@ -29,10 +29,10 @@
 
 <body onload="onLoadFunc()">
     <header>
-        <div class="logo-container">
+        <a href="./index.html" class="logo-container">
             <div class="pokeball-logo"></div>
             <p class="logo-pokedex">Pokedex</p>
-        </div>
+        </a>
         <div class="search-container">
             <form onsubmit="searchPokemon(); return false">
                 <input id="searchBar" onkeyup="searchPokemon()" type="text" placeholder="Search.." name="search"
@@ -41,6 +41,9 @@
             </form>
         </div>
     </header>
+    <div id="loading-spinner" class="loading-spinner">
+        <div class="pokeball-spinner"></div>
+    </div>
     <div class="toggle_btn_container">
         <label class="switch">
             <input id="toggleSwitch" onclick="checkIfToggleSwitch()" type="checkbox">

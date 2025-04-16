@@ -96,6 +96,7 @@
     font-family: "myFont",serif;
     font-size: 48px;
     text-shadow: -8px 0px 0px rgb(98 98 98);
+    color: white;
 }
 
 .pokeball-logo::before {
@@ -127,4 +128,61 @@
     display: flex;
     align-items: center;
     gap: 12px;
+}
+
+.loading-spinner {
+    position: fixed;
+    top: 120px;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 120px);;
+    background: linear-gradient(to bottom, #3466af 0%, #4472c2 70%, #5486dd 95%, #669dfc 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.pokeball-spinner {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, red 50%, white 50%);
+    border: 4px solid black;
+    position: relative;
+    animation: spin 1s linear infinite;
+}
+
+.pokeball-spinner::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 4px;
+    background-color: black;
+}
+
+.pokeball-spinner::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: 4px solid black;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }

@@ -85,3 +85,11 @@ function searchPokemon() {
     );
     renderPokeCards(currentPokecards);
 }
+
+function showLoadingSpinner() {
+    document.getElementById('loading-spinner').style.display = 'flex';
+}
+
+function hideLoadingSpinner() {
+    document.getElementById('loading-spinner').style.display = 'none';
+}

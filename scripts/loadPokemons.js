@@ -4,11 +4,13 @@ let currentPokecards = [];
 async function onLoadFunc() {
     const response = await fetch("https://pokeapi.co/api/v2/pokemon/");
     const pokemonData = await response.json();
+    showLoadingSpinner();
     for (let i = 0; i < pokemonData.results.length; i++) {
         await fetchPokemon(pokemonData.results[i], i);
     }
     currentPokecards = pokemons;
     renderPokeCards(pokemons);
+    hideLoadingSpinner();
 }
 
 function renderPokeCards(pokemonArray) {
@@ -18,6 +20,7 @@ function renderPokeCards(pokemonArray) {
         let formattedId = String(index + 1);
         contentRef.innerHTML += getContentTemplate(pokemon, index, formattedId);
     });
+    contentRef.innerHTML += getMorePokemonsTemplate();
     checkIfToggleSwitch();
 }
 
