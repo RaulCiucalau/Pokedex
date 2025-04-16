@@ -16,6 +16,7 @@ function openOverlay(index) {
     overlayRef.innerHTML = "";
     overlayRef.innerHTML = getOverlayTemplate(selectedPokemon, formattedId);
     updateScrollLockBasedOnOverlay();
+    currentIndex = index;
 }
 
 function updateCardData(index) {
@@ -24,6 +25,7 @@ function updateCardData(index) {
     let formattedId = String(index + 1);
     overlayRef.innerHTML = "";
     overlayRef.innerHTML = getOverlayTemplate(selectedPokemon, formattedId);
+    currentIndex = index;
 }
 
 function openTabOverlay(evt, tabName) {
@@ -70,7 +72,6 @@ function updateScrollLockBasedOnOverlay() {
     }
 }
 
-
 function searchPokemon() {
     let input = document.getElementById('searchBar');
     let inputText = input.value.trim().toLowerCase();
@@ -110,6 +111,4 @@ async function loadMorePokemons() {
     if (offset >= 1302) {
         document.getElementById('loadMoreBtn').classList.add("d_none");
     }
-    
-    
 }
