@@ -30,6 +30,7 @@ function getOverlayTemplate(pokemon, formattedId) {
     return `
         <div class="overlay-content ${pokemon.types[0]}" onclick="event.stopPropagation()">
             <div class="overlay-title-container">
+            <button class="overlay-close-btn" onclick="toggleOverlay()">x</button>
                 <h2 class ="card-overlay-title">ID: ${formattedId}</h2>
                 <h2 class ="card-overlay-title">${pokemon.name}</h2>
             </div>    

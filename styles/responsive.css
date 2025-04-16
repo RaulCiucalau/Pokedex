@@ -1,0 +1,97 @@
+@media (max-width: 630px) {
+    header {
+        flex-direction: column;
+        height: 180px;
+    }
+}
+
+@media (max-width: 492px) {
+    #searchBar {
+        width: 142px;
+    }
+
+    .main {
+        padding: 4px;
+        gap: 8px;
+    }
+
+    .flip-card {
+        height: 310px;
+        width: 211px;
+    }
+
+    header {
+        padding: 16px;
+    }
+}
+
+@media (max-width: 403px) {
+    .overlay-content {
+      width: 90vw;
+      height: 95vh;
+      padding: 12px;
+      font-size: 0.9rem;
+    }
+  
+    .overlay-title-container h2 {
+      font-size: 1.2rem;
+    }
+  
+    .card-overlay-img-container img {
+      width: 120px;
+      height: auto;
+    }
+  
+    .overlay-arrows-button img {
+      width: 32px;
+      height: 32px;
+    }
+  
+    .tab-pokemon-overlay button {
+      font-size: 0.9rem;
+      padding: 6px 10px;
+      width: 140px;
+    }
+  
+    .stat-fill {
+      font-size: 0.75rem;
+    }
+  }
+
+  @media (max-width: 341px) {
+    .overlay-content {
+      width: 95vw;
+      height: 64vh;
+      padding: 10px;
+      font-size: 0.8rem;
+    }
+  
+    .overlay-title-container h2 {
+      font-size: 1rem;
+    }
+  
+    .card-overlay-img-container img {
+      width: 100px;
+      height: auto;
+    }
+  
+    .overlay-arrows-button img {
+      width: 28px;
+      height: 28px;
+    }
+  
+    .tab-pokemon-overlay button {
+      font-size: 0.8rem;
+      padding: 5px 8px;
+      width: 117px;
+    }
+  
+    .stat-fill {
+      font-size: 0.7rem;
+    }
+  
+    .stat-bar {
+      height: 14px;
+    }
+  }
+  
