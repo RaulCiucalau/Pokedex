@@ -44,14 +44,12 @@ function openTabOverlay(evt, tabName) {
 
 function updatePokeCard(direction) {
     currentIndex += direction;
-
     if (currentIndex < 0) {
         currentIndex = pokemons.length - 1;
     } else if (currentIndex >= pokemons.length) {
         currentIndex = 0;
     }
     updateCardData(currentIndex);
-
 }
 
 function nextBtnPokeCard() {
@@ -73,8 +71,7 @@ function updateScrollLockBasedOnOverlay() {
 }
 
 function searchPokemon() {
-    let input = document.getElementById('searchBar');
-    let inputText = input.value.trim().toLowerCase();
+    let inputText = document.getElementById('searchBar').value.trim().toLowerCase();
     if (inputText.length === 0) {
         renderPokeCards(pokemons);
         return;
