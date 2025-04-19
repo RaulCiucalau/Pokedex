@@ -29,7 +29,6 @@ function updateCardData(index) {
 }
 
 function openTabOverlay(evt, tabName) {
-    let i;
     const tabContent = document.getElementsByClassName("tab_content");
     const tabLinks = document.getElementsByClassName("tab_links");
     for (i = 0; i < tabContent.length; i++) {
