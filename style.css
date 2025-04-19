@@ -204,6 +204,8 @@
     align-items: center;
     font-family: "myFont", serif;
     font-size: 24px;
+    background-size: cover;
+    background-repeat: round;
 }
 
 .more-pokemons-btn:hover {

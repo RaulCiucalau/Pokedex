@@ -54,12 +54,20 @@ header {
     gap: 14px;
     padding: 2rem;
     justify-items: center;
+    margin-block: 30px;
+    flex-grow: 1;
 }
 
 footer {
     background-color: #192536;
     height: 90px;
 }
+
+.content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;}
+
 
 a {
     text-decoration: none;

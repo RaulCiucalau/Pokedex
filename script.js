@@ -1,6 +1,6 @@
 let currentIndex = 0;
 let offset = 25;
-let limit = 35;
+let limit = 5;
 
 function toggleOverlay() {
     let overlayRef = document.getElementById("overlay");

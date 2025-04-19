@@ -76,6 +76,6 @@ function getOverlayTemplate(pokemon, formattedId) {
 
 function getMorePokemonsTemplate() {
     return `
-    <div id="loadMorePokemons" onclick="loadMorePokemons()" class="more-pokemons-btn">Load<br>10 more<br>Pokémons</div>
+    <div id="loadMorePokemons" onclick="loadMorePokemons()" class="more-pokemons-btn">Load<br>5 more<br>Pokémons</div>
     `
 }
