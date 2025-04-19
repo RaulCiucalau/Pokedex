@@ -1,97 +1,127 @@
 @media (max-width: 630px) {
-    header {
-        flex-direction: column;
-        height: 180px;
-    }
+  header {
+    flex-direction: column;
+    height: 180px;
+  }
 }
 
 @media (max-width: 492px) {
-    #searchBar {
-        width: 142px;
-    }
+  #searchBar {
+    width: 142px;
+  }
 
-    .main {
-        padding: 4px;
-        gap: 8px;
-    }
+  .main {
+    padding: 4px;
+    gap: 14px;
+  }
 
-    .flip-card {
-        height: 310px;
-        width: 211px;
-    }
+  .flip-card {
+    height: 310px;
+    width: 211px;
+  }
 
-    header {
-        padding: 16px;
-    }
+  header {
+    padding: 16px;
+  }
 }
 
-@media (max-width: 403px) {
-    .overlay-content {
-      width: 90vw;
-      height: 95vh;
-      padding: 12px;
-      font-size: 0.9rem;
-    }
-  
-    .overlay-title-container h2 {
-      font-size: 1.2rem;
-    }
-  
-    .card-overlay-img-container img {
-      width: 120px;
-      height: auto;
-    }
-  
-    .overlay-arrows-button img {
-      width: 32px;
-      height: 32px;
-    }
-  
-    .tab-pokemon-overlay button {
-      font-size: 0.9rem;
-      padding: 6px 10px;
-      width: 140px;
-    }
-  
-    .stat-fill {
-      font-size: 0.75rem;
-    }
+@media (max-width: 446px) {
+  .overlay-content {
+    width: 90vw;
+    height: 95vh;
+    padding: 12px;
+    font-size: 0.9rem;
   }
 
-  @media (max-width: 341px) {
-    .overlay-content {
-      width: 95vw;
-      height: 64vh;
-      padding: 10px;
-      font-size: 0.8rem;
-    }
-  
-    .overlay-title-container h2 {
-      font-size: 1rem;
-    }
-  
-    .card-overlay-img-container img {
-      width: 100px;
-      height: auto;
-    }
-  
-    .overlay-arrows-button img {
-      width: 28px;
-      height: 28px;
-    }
-  
-    .tab-pokemon-overlay button {
-      font-size: 0.8rem;
-      padding: 5px 8px;
-      width: 117px;
-    }
-  
-    .stat-fill {
-      font-size: 0.7rem;
-    }
-  
-    .stat-bar {
-      height: 14px;
-    }
+  .overlay-title-container h2 {
+    font-size: 1.2rem;
   }
-  
+
+  .card-overlay-img-container img {
+    width: 120px;
+    height: auto;
+  }
+
+  .overlay-arrows-button img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .tab-pokemon-overlay button {
+    font-size: 0.9rem;
+    padding: 6px 10px;
+    width: 140px;
+  }
+
+  .stat-fill {
+    font-size: 0.75rem;
+  }
+
+  .flip-card-front-img {
+    height: 205px;
+    width: 150px;
+  }
+
+  .flip-card {
+    height: 205px;
+    width: 150px;
+  }
+
+  .poke-img {
+    height: 91px;
+    width: 104px;
+  }
+
+  .poke-card-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-block: 0;
+  }
+
+  .poke-name {
+    font-size: 16px;
+  }
+
+  .more-pokemons-btn {
+    height: 205px;
+    width: 150px;
+  }
+}
+
+@media (max-width: 341px) {
+  .overlay-content {
+    width: 95vw;
+    height: 64vh;
+    padding: 10px;
+    font-size: 0.8rem;
+  }
+
+  .overlay-title-container h2 {
+    font-size: 1rem;
+  }
+
+  .card-overlay-img-container img {
+    width: 100px;
+    height: auto;
+  }
+
+  .overlay-arrows-button img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .tab-pokemon-overlay button {
+    font-size: 0.8rem;
+    padding: 5px 8px;
+    width: 117px;
+  }
+
+  .stat-fill {
+    font-size: 0.7rem;
+  }
+
+  .stat-bar {
+    height: 14px;
+  }
+}

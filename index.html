@@ -29,36 +29,37 @@
 </head>
 
 <body onload="onLoadFunc()">
-    <header>
-        <a href="./index.html" class="logo-container">
-            <div class="pokeball-logo"></div>
-            <p class="logo-pokedex">Pokedex</p>
-        </a>
-        <div class="search-container">
-            <form onsubmit="searchPokemon(); return false">
-                <input id="searchBar" onkeyup="searchPokemon()" type="text" placeholder="Search.." name="search"
-                    pattern="[a-zA-Z]{3,}" title="Bitte mindestens 3 Buchstaben eingeben (nur A–Z)" required>
-                <button type="submit"><img class="btn-search" src="./assets/icons/icons8-suche.svg" alt=""></button>
-            </form>
+    <div class="content">
+        <header>
+            <a href="./index.html" class="logo-container">
+                <div class="pokeball-logo"></div>
+                <p class="logo-pokedex">Pokedex</p>
+            </a>
+            <div class="search-container">
+                <form onsubmit="searchPokemon(); return false">
+                    <input id="searchBar" onkeyup="searchPokemon()" type="text" placeholder="Search.." name="search"
+                        pattern="[a-zA-Z]{3,}" title="Bitte mindestens 3 Buchstaben eingeben (nur A–Z)" required>
+                    <button type="submit"><img class="btn-search" src="./assets/icons/icons8-suche.svg" alt=""></button>
+                </form>
+            </div>
+        </header>
+        <div id="loading-spinner" class="loading-spinner">
+            <div class="pokeball-spinner"></div>
         </div>
-    </header>
-    <div id="loading-spinner" class="loading-spinner">
-        <div class="pokeball-spinner"></div>
-    </div>
-    <div class="toggle_btn_container">
-        <label class="switch">
-            <input id="toggleSwitch" onclick="checkIfToggleSwitch()" type="checkbox">
-            <span class="slider round"></span>
-        </label>
-        <div class="toggle_btn_title">Flip Cards</div>
-    </div>
-    <div id="content" class="main">
-    </div>
+        <div class="toggle_btn_container">
+            <label class="switch">
+                <input id="toggleSwitch" onclick="checkIfToggleSwitch()" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <div class="toggle_btn_title">Flip Cards</div>
+        </div>
+        <div id="content" class="main">
+        </div>
+        <footer>
 
-    <footer>
-
-    </footer>
-    <div id="overlay" class="overlay d_none" onclick="toggleOverlay()">
+        </footer>
+        <div id="overlay" class="overlay d_none" onclick="toggleOverlay()">
+        </div>
     </div>
 </body>
 
