@@ -12,6 +12,7 @@
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     z-index: 2;
+    overflow: auto;
 }
 
 .overlay-content {
@@ -23,6 +24,7 @@
     height: 648px;
     border-radius: 16px;
     box-sizing: border-box;
+    max-height: max-content;
 }
 
 .overlay-background {
