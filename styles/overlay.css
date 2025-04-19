@@ -131,7 +131,7 @@ h2 {
     background-color: #ccc;
 }
 
-.tabcontent {
+.tab_content {
     font-family: "Poppins", sans-serif;
     display: none;
     text-align: left;
@@ -140,7 +140,7 @@ h2 {
 
 }
 
-.tablinks {
+.tab_links {
     background-color: #bdbdbd;
     ;
     font-size: 16px;
@@ -150,11 +150,11 @@ h2 {
     border: none;
 }
 
-.tablinks:hover {
+.tab_links:hover {
     background-color: #b1b1b1;
 }
 
-.tablinks.active {
+.tab_links.active {
     background-color: #3d65e9;
 }
 

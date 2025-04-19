@@ -28,7 +28,7 @@
 @media (max-width: 454px) {
   .overlay-content {
     width: 90vw;
-    height: 95vh;
+    height: 76vh;
     padding: 12px;
     font-size: 0.9rem;
   }
@@ -38,7 +38,7 @@
   }
 
   .card-overlay-img-container img {
-    width: 120px;
+    width: 138px;
     height: auto;
   }
 
@@ -89,10 +89,19 @@
   }
 }
 
+@media (max-width: 375px) and (min-width: 375px) {
+  .overlay-content {
+    width: 90vw;
+    height: 96vh;
+    padding: 12px;
+    font-size: 0.9rem;
+}
+}
+
 @media (max-width: 341px) {
   .overlay-content {
     width: 95vw;
-    height: 64vh;
+    height: 68vh;
     padding: 10px;
     font-size: 0.8rem;
   }
