@@ -25,7 +25,7 @@
   }
 }
 
-@media (max-width: 446px) {
+@media (max-width: 454px) {
   .overlay-content {
     width: 90vw;
     height: 95vh;
@@ -102,7 +102,7 @@
   }
 
   .card-overlay-img-container img {
-    width: 100px;
+    width: 134px;
     height: auto;
   }
 
@@ -124,4 +124,28 @@
   .stat-bar {
     height: 14px;
   }
+
+  .more-pokemons-btn {
+    height: 190px;
+    width: 138px;
+  }
+
+  .flip-card-front-img {
+    height: 190px;
+    width: 138px;
+  }
+
+  .flip-card {
+    height: 190px;
+    width: 138px;
+  }
+
+  .poke-img {
+    height: 91px;
+    width: 104px;
+  }
+
+  .poke-name {
+    font-size: 14px;
+}
 }

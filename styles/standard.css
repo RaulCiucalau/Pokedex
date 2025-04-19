@@ -44,18 +44,18 @@ header {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem;
+    padding: 12px 14px;
     z-index: 2;
 }
 
 .main {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(202px, 1fr));
-    gap: 14px;
-    padding: 2rem;
-    justify-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-block: 30px;
     flex-grow: 1;
+    padding: 12px 14px;
+    gap: 12PX;
 }
 
 footer {
