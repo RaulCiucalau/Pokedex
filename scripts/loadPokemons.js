@@ -1,7 +1,9 @@
 let pokemons = [];
 let currentPokecards = [];
+let pokemonsLoaded = false;
 
 async function onLoadFunc() {
+    if (pokemonsLoaded) return;
     const response = await fetch("https://pokeapi.co/api/v2/pokemon?limit=25&offset=0");
     const pokemonData = await response.json();
     showLoadingSpinner();
@@ -11,6 +13,7 @@ async function onLoadFunc() {
     currentPokecards = pokemons;
     renderPokeCards(pokemons);
     hideLoadingSpinner();
+    pokemonsLoaded = true; 
 }
 
 function renderPokeCards(pokemonArray) {
