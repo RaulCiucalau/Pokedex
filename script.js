@@ -99,7 +99,7 @@ async function loadMorePokemons() {
     const response = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=${limit}&offset=${offset}`);
     const pokemonData = await response.json();
     for (let i = 0; i < pokemonData.results.length; i++) {
-        const newPokemon = await fetchPokemon(pokemonData.results[i], pokemons.length);
+        await fetchPokemon(pokemonData.results[i], pokemons.length);
     }
     renderPokeCards(pokemons);
     offset += limit;
