@@ -6,7 +6,6 @@ function checkIfToggleSwitch() {
   } else {
     flipCardsDisabled();
     setHoverEffect(false);
-
   }
 }
 

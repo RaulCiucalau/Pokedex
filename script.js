@@ -3,7 +3,7 @@ let offset = 25;
 let limit = 5;
 
 function toggleOverlay() {
-    let overlayRef = document.getElementById("overlay");
+    const overlayRef = document.getElementById("overlay");
     overlayRef.classList.toggle("d_none");
     updateScrollLockBasedOnOverlay();
 }
@@ -20,10 +20,9 @@ function openOverlay(index) {
 }
 
 function updateCardData(index) {
-    let selectedPokemon = pokemons[index];
-    let overlayRef = document.getElementById("overlay");
-    let formattedId = String(index + 1);
-    overlayRef.innerHTML = "";
+    const selectedPokemon = pokemons[index];
+    const overlayRef = document.getElementById("overlay");
+    const formattedId = String(index + 1);
     overlayRef.innerHTML = getOverlayTemplate(selectedPokemon, formattedId);
     currentIndex = index;
 }
@@ -60,26 +59,18 @@ function backBtnPokeCard() {
 }
 
 function updateScrollLockBasedOnOverlay() {
-    let overlay = document.getElementById("overlay");
-    let isOverlayVisible = !overlay.classList.contains("d_none");
-    if (isOverlayVisible) {
-        document.body.classList.add("no-scroll");
-    } else {
-        document.body.classList.remove("no-scroll");
-    }
+    const overlay = document.getElementById("overlay");
+    const isOverlayVisible = !overlay.classList.contains("d_none");
+    document.body.classList.toggle("no-scroll", isOverlayVisible);
 }
 
 function searchPokemon() {
-    let inputText = document.getElementById('searchBar').value.trim().toLowerCase();
-    if (inputText.length === 0) {
-        renderPokeCards(pokemons);
-        return;
-    }
+    const inputText = document.getElementById('searchBar').value.trim().toLowerCase();
     if (inputText.length < 3) {
         renderPokeCards(pokemons);
         return;
     }
-    currentPokecards = pokemons.filter(pokemon =>
+    const currentPokecards = pokemons.filter(pokemon =>
         pokemon.name.toLowerCase().includes(inputText)
     );
     renderPokeCards(currentPokecards);
@@ -98,8 +89,8 @@ async function loadMorePokemons() {
     showLoadingSpinner();
     const response = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=${limit}&offset=${offset}`);
     const pokemonData = await response.json();
-    for (let i = 0; i < pokemonData.results.length; i++) {
-        await fetchPokemon(pokemonData.results[i], pokemons.length);
+    for (const result of pokemonData.results) {
+        await fetchPokemon(result, pokemons.length);
     }
     renderPokeCards(pokemons);
     offset += limit;
