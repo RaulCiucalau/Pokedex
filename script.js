@@ -1,5 +1,5 @@
 let currentIndex = 0;
-let offset = 25;
+let offset = 25 * 1;
 let limit = 5;
 
 function toggleOverlay() {
