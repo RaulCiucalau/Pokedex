@@ -1,4 +1,4 @@
-let pokemons = [];
+let pokemons = new Array();
 let currentPokecards = [];
 let pokemonsLoaded = false;
 
