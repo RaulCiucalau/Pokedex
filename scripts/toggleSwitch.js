@@ -1,5 +1,5 @@
 function checkIfToggleSwitch() {
-  let checkbox = document.getElementById('toggleSwitch');
+  const checkbox = document.getElementById('toggleSwitch');
   if (checkbox.checked) {
     flipCardsEnabled();
     setHoverEffect(true);
