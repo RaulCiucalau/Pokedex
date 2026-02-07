@@ -1,6 +1,6 @@
 function getContentTemplate(pokemon, index, formattedId) {
     return `
-        <div class="flip-card-container" onclick="openOverlay(${index})">
+        <div class='flip-card-container' onclick="openOverlay(${index})">
             <div id="flipCard" class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
