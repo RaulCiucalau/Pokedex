@@ -2,6 +2,8 @@ let currentIndex = 0;
 let offset = 25 * 1;
 let limit = 5;
 
+console.log("Script loaded");
+
 function toggleOverlay() {
     const overlayRef = document.getElementById("overlay");
     overlayRef.classList.toggle("d_none");
