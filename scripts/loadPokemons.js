@@ -3,6 +3,7 @@ let currentPokecards = [];
 let pokemonsLoaded = false;
 
 async function onLoadFunc() {
+    // Load initial pokemons
     if (pokemonsLoaded) return;
     const response = await fetch("https://pokeapi.co/api/v2/pokemon?limit=25&offset=0");
     const pokemonData = await response.json();
